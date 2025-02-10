@@ -11,7 +11,7 @@ export default async function conectarAoBanco(stringConexao) {
 
         return mongoClient;
     } catch (error) {
-        console.error('Falha na conexao com o banco!');
+        console.error('Falha na conexao com o banco!', error);
         process.exit();
     }
 }
